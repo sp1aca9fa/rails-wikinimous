@@ -7,3 +7,12 @@
 #   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
+require "faker"
+
+20.times do
+  article = Article.new(
+    title: "Check Norris fact ##{rand(1654..18289)}",
+    content: Faker::ChuckNorris.fact,
+  )
+  article.save!
+end
