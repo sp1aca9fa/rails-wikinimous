@@ -1,51 +1,52 @@
-# Rails Stupid Coaching
+# Rails Wikinimous
 
-A minimal Ruby on Rails application where users can ask a question and receive a response from a "coach" based on simple logic.
+A simple wiki application built with Ruby on Rails where users can create, edit, and manage articles.
 
 ## Features
 
-- Submit a question through a form
-- Receive a dynamic answer based on input
-- Navigate between pages using standard Rails routing
+- Create new articles
+- View a list of all articles
+- Read individual articles
+- Edit existing articles
+- Delete articles
 
 ## Tech Stack
 
 - Ruby on Rails
+- Active Record (ORM)
 - ERB (Embedded Ruby)
-- Bootstrap (for basic styling)
+- Bootstrap & Font Awesome (for styling)
+- Faker (for seed data)
 
 ## How It Works
 
-The app follows the MVC pattern:
+The application follows RESTful conventions and the MVC architecture:
 
-- **Route**: Handles `/ask` and `/answer` requests
-- **Controller**: Processes user input and generates responses
-- **View**: Displays the form, question, and answer
+- **Model**: Article model with title and content
+- **Controller**: Handles CRUD actions for articles
+- **View**: Renders article data and forms dynamically
 
-### Coach Logic
-
-- "I am going to work" → "Great!"
-- Questions ending with "?" → "Silly question, get dressed and go to work!"
-- Anything else → "I don't care, get dressed and go to work!"
+Articles are stored in a database and managed using Active Record.
 
 ## Setup
 
 git clone <your-repo-url>
-cd rails-stupid-coaching
+cd rails-wikinimous
 bundle install
-rails db:create
+rails db:create db:migrate db:seed
 rails server
 
-Then open:
-http://localhost:3000/ask
+Open in your browser:
+http://localhost:3000/articles
 
 ## Learnings
 
-- Understanding Rails MVC structure
-- Handling HTTP requests and params
-- Building forms and routing user flows
-- Connecting controller logic to views
+- Implementing full CRUD with RESTful routes
+- Using Active Record for database interactions
+- Structuring a Rails app with MVC architecture
+- Seeding databases with Faker
+- Building dynamic views and forms
 
 ## Notes
 
-This project was built as part of a bootcamp exercise to practice core Rails fundamentals.
+This project was built to practice Rails fundamentals and RESTful application design.
