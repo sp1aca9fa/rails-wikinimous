@@ -30,14 +30,15 @@ Articles are stored in a database and managed using Active Record.
 
 ## Setup
 
-git clone <your-repo-url>
+```bash
+git clone https://github.com/sp1aca9fa/rails-wikinimous.git
 cd rails-wikinimous
 bundle install
 rails db:create db:migrate db:seed
 rails server
+```
 
-Open in your browser:
-http://localhost:3000/articles
+Open in your browser: http://localhost:3000/articles
 
 ## Learnings
 
