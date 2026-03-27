@@ -50,4 +50,4 @@ Open in your browser: http://localhost:3000/articles
 
 ## Notes
 
-This project was built to practice Rails fundamentals and RESTful application design.
+This project is a solution to a Le Wagon bootcamp coding challenge and it was built to practice Rails fundamentals and RESTful application design.
